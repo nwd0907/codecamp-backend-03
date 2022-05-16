@@ -1,4 +1,5 @@
 import coolsms from "coolsms-node-sdk"
+import 'dotenv/config'
 
 export function checkValidationPhone(myphone){
     if(myphone.length !== 10 && myphone.length !== 11){
