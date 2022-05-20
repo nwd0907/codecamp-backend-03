@@ -8,6 +8,7 @@ import { options } from './swagger/config.js'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import { Board } from './models/board.model.js'
+import { Stock } from './models/stock.model.js'
 
 const app = express()
 app.use(cors())
@@ -69,6 +70,11 @@ app.post('/users', (req, res) => {
       sendTemplateToEmail(user.email, mytemplate)
       res.send("가입완료!!!")
   }
+})
+
+app.get("/stocks", async (req, res) => {
+  const stocks = await Stock.find()
+  res.send(stocks)
 })
 
 // 몽고DB 접속!!
