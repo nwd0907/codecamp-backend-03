@@ -1,8 +1,8 @@
-function zzz(aaaaaa) {
-    console.log("==============");
-    console.log(aaaaaa);
-    console.log("==============");
-  }
-  
-@zzz
+function bbb(aaaaaa) {
+  console.log("==============");
+  console.log(aaaaaa);
+  console.log("==============");
+}
+
+@bbb
 class AppController {}
