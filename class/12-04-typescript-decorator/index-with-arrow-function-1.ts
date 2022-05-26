@@ -36,7 +36,7 @@ class Bbb {
     console.log("안녕하세요~");
   }
 
-  @qqq() // descriptor 에서 거부됨
+  @qqq() // descriptor 에서 거부됨(함수가 아닌 변수로 인식하므로 descriptor에 들어갈 수 없음)
   getHello2 = () => {
     console.log("반갑습니다~");
   };
