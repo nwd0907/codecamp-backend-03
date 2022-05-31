@@ -1,25 +1,25 @@
-// 1. 메소드 데코레이터에 들어갈 수 있는 화살표 함수
-function zzz() {
-  return function (target, property) {
-    console.log(target); // 해당 클래스
-    console.log(property); // 해당 메소드 이름
-  };
-}
+// // 1. 메소드 데코레이터에 들어갈 수 있는 화살표 함수
+// function zzz() {
+//   return function (aaaaaaa, bbbbbb) {
+//     console.log(aaaaaaa); // 해당 클래스
+//     console.log(bbbbbb); // 해당 메소드 이름
+//   };
+// }
 
-class Aaa {
-  @zzz()
-  mypower = 10;
+// class Aaa {
+//   @zzz()
+//   mypower = 10;
 
-  @zzz()
-  getHello1() {
-    console.log("안녕하세요~");
-  }
+//   @zzz()
+//   getHello1() {
+//     console.log("안녕하세요~");
+//   }
 
-  @zzz()
-  getHello2 = () => {
-    console.log("반갑습니다~");
-  };
-}
+//   @zzz()
+//   getHello2 = () => {
+//     console.log("반갑습니다~");
+//   };
+// }
 
 //
 //
