@@ -1,0 +1,16 @@
+{
+  "name": "26-02-promise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ts-node": "^10.8.1"
+  }
+}
