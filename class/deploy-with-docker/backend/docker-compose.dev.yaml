@@ -5,10 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - ./src:/myfolder/src
+    # volumes:
+    #   - ./src:/myfolder/src
     env_file:
-      - ./.env
+      - ./.env.dev
     ports:
       - 3000:3000
 
