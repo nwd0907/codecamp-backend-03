@@ -9,8 +9,8 @@ services:
       dockerfile: Dockerfile
     # volumes:
     #   - ./src:/myfolder/src
-    env_file:
-      - ./.env.prod
+    # env_file:
+    #   - ./.env.prod
     ports:
       - 3000:3000
 
